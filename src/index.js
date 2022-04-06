@@ -10,9 +10,21 @@ const App = () => {
     return (
         <div className="ui container comments">
             {/* First Comment */}
-            <CommentDetails />
-            <CommentDetails />
-            <CommentDetails />
+            <CommentDetails author = "Saurabh" 
+                time ="Today at 4:00 pm" 
+                image = {faker.image.image()}
+                content = "Hello Guys!! What's up?"
+            />
+            <CommentDetails author = "Aneesh" 
+                time ="Today at 4:30 pm" 
+                image = {faker.image.image()}
+                content = "Nothing much, wbu?"
+            />
+            <CommentDetails author = "Devendra" 
+                time ="Today at 5:00 pm" 
+                image = {faker.image.image()}
+                content = "Let's meet this weekend!"
+            />
         </div>
 
             

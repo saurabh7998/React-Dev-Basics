@@ -1,22 +1,21 @@
 import React from "react";
-import faker from '@faker-js/faker';
 
-const CommentDetails = () => {
+const CommentDetails = (props) => {
     return (
         <div className="comment">
         <a href="/" className="avatar">
-            <img alt="avatar" src={faker.image.image()}/>
+            <img alt="avatar" src = {props.image}/>
         </a>
         <div className="content">
             <a href="/" className="author">
-                Saurabh
+                {props.author}
             </a>
             <div className="metadata">
-                <span className="date">Today at 7:00 pm</span>
+                <span className="date">{props.time}</span>
                 {/* Today at 7:00pm */}
             </div>
             <div className="text">
-                Nice post!
+                {props.content}
             </div>
         </div>
     </div>
